@@ -1,3 +1,19 @@
+// header drawer
+const drawerButton = document.getElementById("drawerButton");
+const drawer = document.getElementById("drawer");
+const closeDrawerButton = document.getElementById("closeDrawerButton");
+
+drawerButton.addEventListener("click", () => {
+  drawer.classList.toggle("drawer-hidden");
+  drawer.classList.toggle("drawer-visible");
+});
+
+closeDrawerButton.addEventListener("click", () => {
+  drawer.classList.add("drawer-hidden");
+  drawer.classList.remove("drawer-visible");
+});
+
+// Company
 $().ready(function () {
   $(".slick-carousel").slick({
     arrows: true,
@@ -5,6 +21,26 @@ $().ready(function () {
     dots: true,
     slidesToShow: 2,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets and small laptops
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
@@ -15,6 +51,26 @@ $().ready(function () {
     dots: true,
     slidesToShow: 5,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets and small laptops
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
@@ -47,6 +103,8 @@ $(document).ready(function () {
     ],
   });
 });
+
+// tabs Selection
 
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll("#tabList a");
@@ -85,3 +143,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+var swiper = new Swiper(".teamswiper", {
+  slidesPerView: 1,
+  spaceBetween: 32,
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
+
+// blog section

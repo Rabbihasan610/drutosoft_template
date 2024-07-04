@@ -18,6 +18,8 @@ body {
   --text-green: linear-gradient(to bottom, #2f765d, #0d2d22);
 }
 
+/* header section */
+
 .navbar {
   background: linear-gradient(to bottom, #2f765d, #0d2d22);
   box-shadow: 0px 4px 40px 0px #00000040;
@@ -44,25 +46,72 @@ body {
 .menu {
   color: #fff !important;
 }
-.menu li {
-  font-size: 18px;
-  font-weight: 600;
-}
 
 .navbar-end {
   width: 33% !important;
 }
 
-/* banner page */
-
-.banner-title {
-  font-size: 47px;
-  font-weight: 700;
-  line-height: 72.8px;
-  font-family: proppins;
-  color: #25282b;
+.menu li {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.menu li a {
+  color: #000; /* Set text color to black */
+}
+.menu li a:hover {
+  background: linear-gradient(90deg, #2f765d 0%, #0d2d22 100%) !important;
+  color: white !important;
 }
 
+.menu li.active {
+  background: linear-gradient(90deg, #2f765d 0%, #0d2d22 100%) !important;
+  color: white !important;
+}
+
+.menu :where(li:not(.menu-title) > :not(ul, details, .menu-title, .btn)),
+.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  border-radius: var(--rounded-btn, 0.5rem);
+  padding-left: 1rem !important;
+  padding-right: 5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.menu li > :not(ul, .menu-title, details, .btn).active,
+.menu li > :not(ul, .menu-title, details, .btn):active,
+.menu li > details > summary:active {
+  background: linear-gradient(90deg, #2f765d 0%, #0d2d22 100%) !important;
+  color: white !important;
+}
+
+.menu-horizontal li {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.rotate-icon svg {
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform */
+}
+
+.rotate-icon:hover svg {
+  transform: rotate(180deg); /* Rotate the SVG 180 degrees on hover */
+}
+
+/* drawer page */
+.drawer-hidden {
+  transform: translateX(-100%);
+}
+
+.drawer-visible {
+  transform: translateX(0);
+}
+
+.drawer {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* banner page */
 .banner-describe {
   padding-top: 20px;
   font-size: 30.88px;
@@ -71,30 +120,8 @@ body {
   color: #020202;
 }
 
-.experience-task {
-  margin-top: 30px;
-  box-shadow: 0px 4px 40px 0px #00000040;
-  width: 300px;
-  height: 350px;
-  gap: 0px;
-  border-radius: 24px;
-  opacity: 0px;
-  background: #fafafa;
-}
 
-.services-Box {
-  width: 416px;
-  height: 388.75px;
-  top: 2307px;
-  left: 103px;
-  padding: 60px 35px 60px 35px;
-  gap: 0px;
-  border-radius: 10px;
-  opacity: 0px;
-  background: #ffffff01;
-  box-shadow: 0px 12px 24px 0px #50505012;
-}
-
+/* case study section */
 .case-study1 {
   border-radius: 0px 30px 30px 0px;
   border: 1px 0px 0px 0px;
@@ -115,8 +142,6 @@ body {
   background: #fff4f4;
   border: 1px solid #e7daed;
 }
-
-/* case study  */
 
 /* footer section */
 
@@ -174,8 +199,7 @@ body {
   }
 }
 
-/* swipper css  */
-
+/* slick slider  css  */
 .slick-slide {
   .slide-content {
     margin: 0;
@@ -233,11 +257,11 @@ body {
 }
 
 .slick-prev {
-  left: -25px !important;
+  left: 5px !important;
 }
 
 .slick-next {
-  right: -25px !important;
+  right: 5px !important;
 }
 
 .slick-dots {
@@ -277,18 +301,99 @@ body {
   display: none;
 }
 
-
-
 .active {
-  background-color: #2F765D;
+  background-color: #2f765d;
   color: white;
   padding-left: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.slick-slide {
-  margin: 0 0.75rem; /* Adjust the margin as needed */
+/* Dropdown container styling */
+.men-nav-dropdown {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 9;
+  width: 1400px;
+  height: auto;
+  left: 60px !important;
+  top: 110px !important;
+  text-align: left;
+  border-radius: 3px;
+  transform: translateY(25%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
-.slick-list {
-  margin: 0 -0.75rem; /* Adjust the margin as needed */
+
+/* Show dropdown on hover */
+.mega-menu:hover .men-nav-dropdown,
+.men-nav-dropdown:hover {
+  transform: translateY(0);
+  transition: 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* about page */
+.teamswiper .swiper-wrapper {
+  height: max-content !important;
+  padding-bottom: 64px !important;
+}
+
+.teamswiper .swiper-horizontal > .swiper-scrollbar,
+.teamswiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+  max-width: 140px !important;
+  height: 3px !important;
+  bottom: 25px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.teamswiper .swiper-pagination-fraction {
+  bottom: 0 !important;
+  padding-top: 16px !important;
+}
+
+.teamswiper .swiper-slide.swiper-slide-active > .slide\:border-indigo-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.teamswiper .swiper-pagination-total {
+  color: rgb(156 163 175) !important;
+}
+
+.teamswiper .swiper-scrollbar-drag {
+  background: rgb(79 70 229);
+}
+
+.teamswiper .swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+
+.teamswiper .swiper-button-prev:after,
+.teamswiper .swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
+
+.teamswiper .swiper-button-prev {
+  top: 93% !important;
+  left: 35% !important;
+  z-index: 100 !important;
+}
+
+.teamswiper .swiper-button-next {
+  top: 93% !important;
+  right: 35% !important;
+  z-index: 100 !important;
+}
+
+.teamswiper .swiper-button-next:after,
+.teamswiper .swiper-rtl .swiper-button-prev:after {
+  content: "" !important;
+}
+
+.teamswiper .swiper-button-next svg,
+.teamswiper .swiper-button-prev svg {
+  width: 24px !important;
+  height: 24px !important;
 }

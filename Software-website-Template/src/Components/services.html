@@ -52,14 +52,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body class="bg-[#F6FAF8]">
-    <header class="">
+    <header>
       <div class="navbar">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="lg:hidden">
+          <div class="lg:hidden">
+            <button
+              id="drawerButton"
+              role="button"
+              class="flex items-center text-white px-4 py-3 rounded-md hover:bg-gray-500"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-white"
+                class="h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -71,34 +75,174 @@
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Home</a></li>
-              <li><a>All Products</a></li>
-              <li><a>Services</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>About Us</a></li>
-            </ul>
+            </button>
           </div>
           <button class="text-xl lg:ml-16">
             <img src="../assets/logo.png" alt="" />
           </button>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 gap-16">
-            <li>Home</li>
-            <li>All Products</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>About Us</li>
+          <ul class="menu-horizontal px-8 gap-16">
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Home
+            </li>
+            <li
+              class="mega-menu py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white cursor-pointer rotate-icon"
+            >
+              <div class="flex items-center">
+                <span class="pr-2">All Products</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-8 h-8 font-bold"
+                >
+                  <path
+                    d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+                  />
+                </svg>
+                <div
+                  class="men-nav-dropdown grid grid-cols-1 lg:grid-cols-3 items-center gap-8 shadow-2xl py-10 px-10"
+                >
+                  <!-- Dropdown content goes here -->
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="py-2 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Services
+            </li>
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Blogs
+            </li>
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              About Us
+            </li>
           </ul>
         </div>
         <div class="navbar-end lg:mr-6">
           <button class="btn-white">Contact Us</button>
         </div>
+      </div>
+      <div
+        id="drawer"
+        class="fixed inset-y-0 left-0 h-full w-64 bg-white shadow-lg drawer drawer-hidden z-40"
+      >
+        <div class="p-4">
+          <button
+            id="closeDrawerButton"
+            class="absolute right-5 bg-gray-500 hover:bg-gray-950 text-white px-2 py-1 rounded"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="menu p-4 absolute mt-10">
+          <li><a>Home</a></li>
+          <li><a>All Products</a></li>
+          <li><a>Services</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>About Us</a></li>
+        </ul>
       </div>
     </header>
 
@@ -505,5 +649,6 @@
         <p class="opacity-70 text-center p-4">@Copyright 2024. All right</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

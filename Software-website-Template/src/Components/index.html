@@ -52,14 +52,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
-    <header class="">
+    <header>
       <div class="navbar">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="lg:hidden">
+          <div class="lg:hidden">
+            <button
+              id="drawerButton"
+              role="button"
+              class="flex items-center text-white px-4 py-3 rounded-md hover:bg-gray-500"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-white"
+                class="h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -71,41 +75,183 @@
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Home</a></li>
-              <li><a>All Products</a></li>
-              <li><a>Services</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>About Us</a></li>
-            </ul>
+            </button>
           </div>
           <button class="text-xl lg:ml-16">
             <img src="../assets/logo.png" alt="" />
           </button>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 gap-16">
-            <li>Home</li>
-            <li>All Products</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>About Us</li>
+          <ul class="menu-horizontal px-8 gap-16">
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Home
+            </li>
+            <li
+              class="mega-menu py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white cursor-pointer rotate-icon"
+            >
+              <div class="flex items-center">
+                <span class="pr-2">All Products</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-8 h-8 font-bold"
+                >
+                  <path
+                    d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+                  />
+                </svg>
+                <div
+                  class="men-nav-dropdown grid grid-cols-1 lg:grid-cols-3 items-center gap-8 shadow-2xl py-10 px-10"
+                >
+                  <!-- Dropdown content goes here -->
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-5 bg-[#DBEFF0] pl-6 py-4 rounded-md mb-5"
+                  >
+                    <img src="../assets/image 1.png" alt="" />
+                    <div>
+                      <h1 class="text-black text-lg font-bold">Website</h1>
+                      <p class="text-xs text-black font-normal">
+                        Multi Store eCommerce Shopping Cart Solution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="py-2 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Services
+            </li>
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              Blogs
+            </li>
+            <li class="py-3 px-4 rounded-md hover:bg-[#0D2D22] text-white">
+              About Us
+            </li>
           </ul>
         </div>
         <div class="navbar-end lg:mr-6">
           <button class="btn-white">Contact Us</button>
         </div>
       </div>
+      <div
+        id="drawer"
+        class="fixed inset-y-0 left-0 h-full w-64 bg-white shadow-lg drawer drawer-hidden z-40"
+      >
+        <div class="p-4">
+          <button
+            id="closeDrawerButton"
+            class="absolute right-5 bg-gray-500 hover:bg-gray-950 text-white px-2 py-1 rounded"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="menu p-4 absolute mt-10">
+          <li><a>Home</a></li>
+          <li><a>All Products</a></li>
+          <li><a>Services</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>About Us</a></li>
+        </ul>
+      </div>
     </header>
+
+    <!-- main section -->
     <main class="container mx-auto">
       <!-- banner section -->
       <section class="">
         <div class="flex justify-end pt-5 pr-5">
-          <div class="space-y-3">
+          <div class="space-y-3 hidden md:block">
             <div class="flex gap-2">
               <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
               <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
@@ -131,10 +277,10 @@
             class="grid px-4 pt-20 pb-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-8"
           >
             <div class="place-self-center lg:col-span-8">
-              <h1 class="banner-title">
+              <h1 class="text-3xl md:text-4xl font-bold">
                 <b
                   >Best
-                  <span class="text-[#2F765D] text-[55px]"
+                  <span class="text-[#2F765D] text-4xl md:text-5xl"
                     >Software Development</span
                   ><br />
                   Company</b
@@ -149,7 +295,7 @@
               </p>
             </div>
 
-            <div class="hidden lg:mt-0 lg:col-span-4 lg:flex relative">
+            <div class="lg:mt-0 lg:col-span-4 lg:flex relative">
               <img
                 src="../assets/banner.png"
                 alt="hero image"
@@ -180,7 +326,7 @@
               </div>
 
               <div
-                class="absolute w-[280.95px] h-[234.55px] top-[300.03px] gap-0 rounded-[29px] bg-gradient-to-b from-[#2f765d] to-[#0d2d22] flex flex-col justify-center items-center"
+                class="absolute w-[280.95px] h-[234.55px] top-56 md:top-[460px] lg:top-[300.03px] gap-0 rounded-[29px] bg-gradient-to-b from-[#2f765d] to-[#0d2d22] flex flex-col justify-center items-center"
               >
                 <h1 class="text-7xl text-white text-center font-bold">10+</h1>
                 <p class="text-2xl text-white text-center font-bold">
@@ -194,7 +340,7 @@
               <div
                 class="absolute top-[380px] flex justify-end pt-5 left-[305px]"
               >
-                <div class="space-y-3">
+                <div class="space-y-3 hidden md:block">
                   <div class="flex gap-2">
                     <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
                     <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
@@ -222,132 +368,135 @@
 
       <!-- products experience -->
 
-      <section class="my-40 mx-32">
-        <h1 class="text-[50px] font-bold text-center">Bdtask, Inc.</h1>
-        <h1 class="text-[50px] font-bold text-[#2f765d] text-center">
+      <section class="my-40 pt-40 lg:pt-0 lg:mx-32">
+        <h1 class="text-5xl font-bold text-center">Bdtask, Inc.</h1>
+        <h1 class="text-5xl font-bold text-green-700 text-center">
           At a Glance
         </h1>
-        <div class="grid grid-cols-3 gap-10 justify-center">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center mt-10 lg:mt-20"
+        >
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">50+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">50+</p>
             <p class="text-2xl font-bold text-center">Project</p>
           </div>
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">50+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">50+</p>
             <p class="text-2xl font-bold text-center">Products</p>
           </div>
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">50+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">50+</p>
             <p class="text-2xl font-bold text-center">Experts</p>
           </div>
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">50+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">50+</p>
             <p class="text-2xl font-bold text-center">Countries</p>
           </div>
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">50+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">50+</p>
             <p class="text-2xl font-bold text-center">Happy Clients</p>
           </div>
           <div
-            class="experience-task flex flex-col justify-center items-center"
+            class="flex flex-col justify-center items-center bg-gray-100 shadow-lg rounded-xl p-8"
           >
             <img src="../assets//experience-.png" alt="" class="pb-10" />
-            <p class="text-[#2f765d] text-3xl font-bold text-center">10+</p>
+            <p class="text-green-700 text-5xl font-bold text-center">10+</p>
             <p class="text-2xl font-bold text-center">Years Experienced</p>
           </div>
         </div>
       </section>
-
       <!-- services page -->
 
-      <section class="bg-[#F9F9FF] my-40 mx-32">
+      <section class="bg-[#F9F9FF] my-40 lg:mx-32">
         <h1 class="text-center font-bold text-4xl">Services we offer</h1>
-        <div class="grid grid-cols-3 gap-10 items-center justify-center pt-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center pt-20"
+        >
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
           <div
-            class="services-Box flex flex-col justify-center items-center space-y-6"
+            class="bg-white shadow-md rounded-lg p-12 flex flex-col justify-center items-center space-y-6"
           >
-            <img src="../assets//experience-.png" alt="" />
+            <img src="../assets/experience-.png" alt="" />
             <p class="text-[#2f765d] text-2xl font-bold text-center">
               Business Strategy
             </p>
             <p class="text-base font-normal text-center">
               A business strategy is a powerful tool for helping you reach your
-              goals, defining the methods and tactics
+              goals, defining the methods and tactics.
             </p>
           </div>
         </div>
@@ -355,7 +504,7 @@
 
       <!-- case study page -->
 
-      <section class="mx-32">
+      <section class="lg:mx-32">
         <div class="space-y-8">
           <div class="card lg:card-side bg-base-100 shadow-xl">
             <figure>
@@ -365,7 +514,7 @@
               <h1 class="text-3xl font-semibold pt-5">
                 Website Design for SCFC Canada
               </h1>
-              <p class="text-[14px] w-[529px] pt-8">
+              <p class="text-[14px] w-full lg:w-[529px] pt-8">
                 Born out of a vision, a single-minded objective that puts
                 service before anything else, Swift Clearance and Forwarding
                 Corp. surging forth to deliver the best services in the shipping
@@ -384,7 +533,7 @@
               <h1 class="text-3xl font-semibold pt-5">
                 Website Design for SCFC Canada
               </h1>
-              <p class="text-[14px] w-[529px] pt-8">
+              <p class="text-[14px] w-full lg:w-[529px] pt-8">
                 Born out of a vision, a single-minded objective that puts
                 service before anything else, Swift Clearance and Forwarding
                 Corp. surging forth to deliver the best services in the shipping
@@ -403,7 +552,7 @@
               <h1 class="text-3xl font-semibold pt-5">
                 Website Design for SCFC Canada
               </h1>
-              <p class="text-[14px] w-[529px] pt-8">
+              <p class="text-[14px] w-full lg:w-[529px] pt-8">
                 Born out of a vision, a single-minded objective that puts
                 service before anything else, Swift Clearance and Forwarding
                 Corp. surging forth to deliver the best services in the shipping
@@ -418,7 +567,7 @@
       </section>
 
       <!-- company page -->
-      <section class="mt-10 mx-32">
+      <section class="mt-10 lg:mx-32">
         <h1 class="text-center text-5xl font-bold text-[#2F765D] mt-16 mb-10">
           Company
         </h1>
@@ -519,9 +668,9 @@
       </section>
 
       <!-- Customer's Feedback page -->
-      <section class="mt-16 mx-32">
+      <section class="mt-16 lg:mx-32">
         <div class="flex justify-start pt-5 pr-5">
-          <div class="space-y-3">
+          <div class="space-y-3 hidden lg:block">
             <div class="flex gap-2">
               <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
               <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
@@ -556,7 +705,7 @@
               <div
                 class="grid px-4 pt-20 pb-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-8"
               >
-                <div class="hidden lg:mt-0 lg:col-span-4 lg:flex relative">
+                <div class="lg:mt-0 lg:col-span-4 lg:flex relative">
                   <img
                     src="../assets//feedback.png"
                     alt="hero image"
@@ -603,7 +752,7 @@
                 <div
                   class="flex justify-end pt-5 pr-5 absolute right-0 bottom-0"
                 >
-                  <div class="space-y-3">
+                  <div class="space-y-3 hidden lg:block">
                     <div class="flex gap-2">
                       <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
                       <div class="w-5 h-5 rounded-full bg-[#2F765D]"></div>
